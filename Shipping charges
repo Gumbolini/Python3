@@ -1,0 +1,25 @@
+weight = 41.5
+ground_flat_charge = 20
+
+premium_ground_shipping = 125.00
+# Ground shipping
+if (weight <= 2):
+  print("Ground shipping price is: " + str(weight * 1.5 + ground_flat_charge) + "$")
+elif (weight <= 6):
+  print ("Ground shipping price is: " + str(weight * 3 + ground_flat_charge) + "$")
+elif (weight <= 10):
+  print ("Ground shipping price is: " + str(weight * 4 + ground_flat_charge) + "$")
+elif (weight > 10):
+  print("Ground Shipping price is: " + str(weight * 4.75 + ground_flat_charge) + "$")
+
+# Drone Shipping 
+if (weight <= 2):
+  print("Drone shipping price is: " + str(weight * 4.50) + "$")
+elif (weight <= 6):
+  print ("Drone shipping price is: " + str(weight * 9.00) + "$")
+elif (weight <= 10):
+  print ("Drone shipping price is: " + str(weight * 12.00) + "$")
+elif (weight > 10):
+  print("Drone shipping price is: " + str(weight * 14.25) + "$")
+
+print("Premium ground shipping is: " + str(premium_ground_shipping) + "$")
